@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".WasherSignupPage">
+    tools:context=".CourierSignupPage">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Signing-up for Washer Account"
+                android:text="Signing-up for Courier Account"
                 android:textAlignment="center"
                 android:textSize="46sp"
                 android:textStyle="bold" />
@@ -43,35 +43,35 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <!-- Store Name -->
+            <!-- First Name -->
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/storeNameLayout"
+                android:id="@+id/firstNameLayout"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:hint="Store Name">
+                android:hint="First Name">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/storeNameEditText"
+                    android:id="@+id/firstNameEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
+                    android:inputType="textPersonName"
                     app:hintEnabled="false" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Price per kg -->
+            <!-- Last Name -->
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/pricePerKgLayout"
+                android:id="@+id/lastNameLayout"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:hint="Price/kg">
+                android:hint="Last Name">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/pricePerKgEditText"
+                    android:id="@+id/lastNameEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="numberDecimal"
+                    android:inputType="textPersonName"
                     app:hintEnabled="false" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -139,18 +139,18 @@
                 app:hintEnabled="false" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Address -->
+        <!-- License Number -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/addressLayout"
+            android:id="@+id/licenseNoLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Address">
+            android:hint="License No.">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/addressEditText"
+                android:id="@+id/licenseNoEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPostalAddress"
+                android:inputType="text"
                 app:hintEnabled="false" />
         </com.google.android.material.textfield.TextInputLayout>
 

@@ -25,7 +25,7 @@
         android:id="@+id/SecondFragment"
         android:name="com.example.laundiri.CourierSignupPage"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/courier_sign_up_page">
+        tools:layout="@layout/fragment_courier_sign_up_page">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
