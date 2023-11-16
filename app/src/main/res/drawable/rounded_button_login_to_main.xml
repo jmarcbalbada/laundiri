@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/login_to_main" /> <!-- Background color -->
+    <corners android:radius="10dp" /> <!-- Adjust the radius to control the curvature -->
+
+    <stroke
+        android:width=".5dp"
+        android:color="@color/black" />
+</shape>

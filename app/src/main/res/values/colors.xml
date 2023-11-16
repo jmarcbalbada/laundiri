@@ -6,4 +6,12 @@
     <color name="courier">#E6A30B</color>
     <color name="washer">#4480A9</color>
 
+
+    <color name="login_to_main">#83AF84</color>
+    <color name="login">#4480A9</color>
+
+
+    <color name="green">#83AF84</color>
+    <color name="redirect_to_register">#4480A9</color>
+
 </resources>

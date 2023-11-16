@@ -30,7 +30,7 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.loginCourierButton.setOnClickListener(new View.OnClickListener() {
+        binding.signupCourierButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(FirstFragment.this)
@@ -38,7 +38,7 @@ public class FirstFragment extends Fragment {
             }
         });
 
-        binding.loginClientButton.setOnClickListener(new View.OnClickListener() {
+        binding.signupClientButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(FirstFragment.this)
@@ -46,7 +46,7 @@ public class FirstFragment extends Fragment {
             }
         });
 
-        binding.loginWasherButton.setOnClickListener(new View.OnClickListener() {
+        binding.signupWasherButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(FirstFragment.this)
