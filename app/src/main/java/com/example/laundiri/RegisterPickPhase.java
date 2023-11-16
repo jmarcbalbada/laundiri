@@ -1,5 +1,6 @@
 package com.example.laundiri;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -7,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -33,6 +35,8 @@ public class RegisterPickPhase extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
+        TextView log_in_here = findViewById(R.id.log_in_here);
+
         getSupportActionBar().setTitle("Sign-up");
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +47,17 @@ public class RegisterPickPhase extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        log_in_here.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RegisterPickPhase.this, LoginPage.class);
+                startActivity(intent);
+
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+        });
+
     }
 
     @Override

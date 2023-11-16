@@ -53,4 +53,13 @@
     <string name="log_in_account">Login Account</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in_here">Log-in here</string>
+    <string name="tap_sign_up">Sign up</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="remember_this_device">Remember this device</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="done_have_an_account">Done have an account?</string>
+    <string name="email">Email</string>
 </resources>
