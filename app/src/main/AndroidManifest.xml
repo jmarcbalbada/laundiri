@@ -15,7 +15,7 @@
         <activity
             android:name=".RegisterPickPhase"
             android:exported="true"
-            android:label="@string/title_activity_login_pick_phase"
+            android:label="@string/app_name"
             android:theme="@style/Theme.Laundiri">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

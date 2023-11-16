@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.laundiri.databinding.CourierSignUpPageBinding;
+import com.example.laundiri.databinding.FragmentCourierSignUpPageBinding;
 
 public class CourierSignupPage extends Fragment {
 
-    private CourierSignUpPageBinding binding;
+    private FragmentCourierSignUpPageBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +21,7 @@ public class CourierSignupPage extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = CourierSignUpPageBinding.inflate(inflater, container, false);
+        binding = FragmentCourierSignUpPageBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -29,13 +29,6 @@ public class CourierSignupPage extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(CourierSignupPage.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
-            }
-        });
     }
 
     @Override
