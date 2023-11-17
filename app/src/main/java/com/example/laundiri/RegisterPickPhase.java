@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -36,8 +37,11 @@ public class RegisterPickPhase extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
         TextView log_in_here = findViewById(R.id.log_in_here);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitle("Sign-up");
 
-        getSupportActionBar().setTitle("Sign-up");
+//        getSupportActionBar().setTitle("Sign-up");
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override

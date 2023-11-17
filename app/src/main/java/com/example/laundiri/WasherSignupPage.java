@@ -2,6 +2,7 @@ package com.example.laundiri;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -59,6 +60,17 @@ public class WasherSignupPage extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        View view = inflater.inflate(R.layout.fragment_washer_sign_up_page, container, false);
+
+        // Set the toolbar title
+        if (getActivity() != null && getActivity() instanceof AppCompatActivity) {
+            AppCompatActivity activity = (AppCompatActivity) getActivity();
+            if (activity.getSupportActionBar() != null) {
+                activity.getSupportActionBar().setTitle(R.string.washer_sign_up_page);
+            }
+        }
+
         return inflater.inflate(R.layout.fragment_washer_sign_up_page, container, false);
     }
 }
